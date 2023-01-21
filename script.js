@@ -26,3 +26,32 @@ function assignClasses() {
       }
     }
   }
+
+  // save to local storage function
+function saveTLS(event) {
+    event.preventDefault();
+  
+    // collect data from data attr and the value from the textarea
+    const currentHour = event.target.getAttribute("data-hour");
+    var input = $(event.target).siblings("textarea").val();
+  
+    // get the todos object from ls
+    var todosFromLS = JSON.parse(localStorage.getItem("todos"));
+  
+    // add the new todo to the object (using the spread operator)
+    var todosToSave = {
+      ...todosFromLS,
+      [currentHour]: input,
+    };
+  
+    // save the updated todos back in ls
+    localStorage.setItem("todos", JSON.stringify(todosToSave));
+  
+    confirmDiv.text("Task is added to local storage ✔️");
+  }
+  
+  
+  $(".saveBtn").on("click", saveTLS);
+  
+  assignClasses();
+  displayTime();
