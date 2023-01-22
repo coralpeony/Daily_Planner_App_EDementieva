@@ -8,6 +8,16 @@ function displayTime() {
   timeDisplayEl.text(rightNow);
 }
 
+// function to add tasks to the schedule if empty 
+function initLocalStorage(params) {
+  const isObject = localStorage.getItem("todos");
+
+  if (!isObject) {
+    localStorage.setItem("todos", JSON.stringify({}));
+  }
+}
+initLocalStorage();
+
 // Assign past present future classes function
 function assignClasses() {
   var currentTime = moment().format("H");
@@ -59,7 +69,7 @@ function populateData() {
     var todoText = todosFromLS[textAreaId];
 
     if (todoText) {
-      $(`#${textAreaId} `).text(todoText);
+      $(`#${textAreaId}`).text(todoText);
     }
   }
 }
