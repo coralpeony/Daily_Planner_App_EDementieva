@@ -6,17 +6,13 @@ The task in this Challenge is to create a simple calendar application that allow
 
 In this Challenge I applied the core skills we've recently learned, such as DOM manipulation, JavaScript and jQuery. I also used the Moment.js library to work with date and time.
 
-The app runs in the browser and features dynamically updated HTML and CSS, all powered by jQuery. The app adapts to multiple screen sizes.
+The app runs in the browser and features dynamically updated HTML and CSS, all powered by jQuery. 
 
 ## Installation
 
 N/A
 
 ## Usage of the application:
-
-AS AN employee with a busy schedule,
-You WANT to add important events to a daily planner,
-SO THAT You can manage your time effectively.
 
 The app displays the current day at the top of the calendar when a user opens the planner.
 
