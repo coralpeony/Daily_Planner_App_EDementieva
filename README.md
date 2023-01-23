@@ -18,7 +18,7 @@ The app displays the current day at the top of the calendar when a user opens th
 
 It presents timeblocks for standard business hours when the user scrolls down.
 
-Timeblocks are color-coded based on past, present, and future time.
+Timeblocks are color-coded based on the past, present, and future hour.
 
 A user can enter an event when they click a timeblock.
 
@@ -37,4 +37,4 @@ N/A
 
 ## License
 
-N/A
+MIT License
