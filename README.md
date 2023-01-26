@@ -27,7 +27,7 @@ A user can save the event in local storage when the save button is clicked in th
 Events persist between refreshes of a page.
 
 
-![Daily_Planner_App](./images/screenshot.png)
+![Daily_Planner_App](./assets/images/screenshot.png)
 
 https://coralpeony.github.io/Daily_Planner_App_EDementieva/
 
